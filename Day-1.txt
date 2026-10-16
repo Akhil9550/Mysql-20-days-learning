@@ -1,0 +1,110 @@
+Frontend:
+frontend is the visual and interactive layer of a website or application that users directly see interact with through the web browser or mobile application. It is also called the client site because it runs on the user device (browser/mobile).
+
+Responsibilities of Frontend:
+
+Displays web pages and user interface(UI).
+Accepts user input(forms, buttons,search boxes)
+Validates user input before sending it to the server.
+Calls Backend API's to fetch or send data.
+Displays the response received from the backend.
+Provides animation and interactive effects.
+
+Backend:
+
+Backend is the server-side part of an application.
+Users cannot see it directly. But it performs all business logic, security, data processing and database operations.
+It acts the brain of the application.
+
+Responsibilities of Backend:
+
+1. Process clients request.
+2. Implements business logic.
+3. Connects with database.
+4. Preforms crud operations.
+5. Authenticates and authorize users.
+6. Encrypts passwords and sensitive data.
+7. Generate reports.
+8. Returns response to the frontend. 
+
+What is an API (Application Programming Interface):
+
+An API is a set of rules and protocols that allows two different applications or systems to communicate and exchange data without exposing their internal implementation.
+It acts as a bridge between frontend and backend or between two different software systems.
+
+Restaurant Analogy:
+you (client)-----> gives order to waiter(API)----> kitchen(Server)---->prepare food kitchen------>gives food to waiter(API)------> you receive your meal.
+
+Storage Areas:
+As a part of our applications we required to store data like Customer's information, or Billing information's or calls information... etc to store this data we required storage areas.
+
+There are 2 types of storage areas such as
+
+1.Temporary Storage Areas.
+2.Permanent Storage Areas.
+
+1.Temporary Storage Areas:
+These are the memory areas where the data will be stored temporarily
+EX: All JVM memory areas(like Heap Area, Stack Area, Method area, PC Registers, Native Method stacks).
+Once JVM shutdown all these memory areas will be cleared automatically.
+
+2. Permanent Storage Areas:
+it is also known as Persistent Storage Areas, Here we can store data permanently.
+EX: File System, Databases, Data Warehouse, Bigdata...etc.
+
+File Management System:
+
+A file management system is a system where data is stored in files on the operation systems. Each application program must handle its own storage data, retrieval and updating. File Systems can be provided by the local operating systems.
+
+File Systems are Best Suitable for to store very less amount of information (Like KB)
+EX: A library management system storing books in separate text files likes, books.txt, members.txt
+
+Limitations of File Management Systems:
+
+Data Redundancy : same data is stored in multiple files.
+Data Inconsistency : update in one file may not be reflected in another.
+Poor Data Security : No proper accessed Control.
+Difficult Data Retrieval : searching required custom programs.
+integrity Issues : No Constraints(e.g.: Roll number uniqueness)
+Scalability Issues : Hard to manage as data grows.
+
+to overcome the above problems of file systems, we should go for databases.
+
+Database Management System:
+
+A DBMS is a collection of programs that enables users to create, manage and manipulates databases.
+it acts as an interface between users and database.
+
+Advantages:
+we can store huge amount of information in databases
+Query Language support is available for every database and hence we can perform database operations.
+Inside database data will stored in the form of tables. While developing database tables database admin follows various normalization techniques. And we implement various constraints like unique key constraints, primary key constraint....etc which prevent data duplication. Hence there is no chance of data inconsistency problems.
+To accesses data present in the database compulsory username and password must be required hence data is secured.
+
+What is the Difference between FMS & DBMS? (IQ) :
+
+1. Data is Stored in Separate Files
+   Data is Stored and managed in a database.
+2. High data redundancy may occur.
+   Data redundancy can be reduced using proper database design and normalization.
+3. Data is Comparatively difficult to manage and manipulate.
+   Data is easier to maintain and update using DBMS tools and Queries.
+4. Security and accessed control generally limited.
+   Provides Authentication and Authorization, roles and accesses control mechanisms.
+5. Data Sharing and concurrent accessed are more difficult to manage.
+   multiple users can accessed and manage data simultaneously with concurrency control.
+6. Relationships between data stored in separate files not inherently managed.
+   Supports relationships between tables using keys such as primary key and Foreign key.
+7. Backup and recovery are generally manual or difficult to manage.
+   Provides backup and recovery mechanism 
+8. Data inconsistency may occur and integrity is difficult to enforce.
+   Provides mechanism to maintain data inconsistency and integrity using constraints and transactions.
+9. Suitable for simple applications with limited data management requirements.
+   Suitable for small, medium and large applications, depending on the DBMS and Architecture.
+
+Q: What is difference between a file systems and DBMS:
+
+a file system stores data in separate files and may lead data redundancy and security issues. A DBMS stores data in structured manner using tables reduces redundancy provides security support multiple users and ensures data consistency and integrity.
+
+
+
